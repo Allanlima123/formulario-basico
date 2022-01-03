@@ -1,7 +1,7 @@
 
 .cadastro{
-    background-image: url(../src/bg-intro-desktop.png), 
-                    linear-gradient(rgba(255, 122, 122,.8), rgba(255, 122, 122,.8));
+    background-image: linear-gradient(rgba(255, 122, 122,.7), rgba(255, 122, 122,.7)),
+                      url(../src/bg-intro-desktop.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -10,13 +10,12 @@
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    opacity: .9;
     max-width: 1440px;
     margin: 0 auto;
 }
 
 .cadastro .sobre,
-.cadastro .fumulario{
+.cadastro .container-box{
     flex: 0 1 48rem;
 }
 
@@ -24,11 +23,11 @@
     color: var(--cor-white);
 }
 
-.cadastro .sobre .price{
+.cadastro .sobre .titulo{
     font-size: 4rem;
 }
 
-.cadastro .sobre  p{
+.cadastro .sobre .paragrafo{
     font-size: 1.5rem;
     margin-top: 2.5rem;
     line-height: 1.8;
@@ -36,11 +35,12 @@
 
 /* formulário */
 
-.fumulario{
+.container-box{
     width: 100%;
+    margin: 0 2.5rem;
 }
 
-.fumulario .title{
+.container-box .title{
     background: var(--cor-blue);
     border-radius: 10px;
     padding: 2rem 0;
@@ -51,40 +51,40 @@
     box-shadow: 1px 7px 1px rgba(0,0,0,.2);
 }
 
-.fumulario .title strong{
+.container-box .title strong{
     color: var(--cor-white);
     font-weight: 700;
 }
 
-.fumulario form{
+.container-box form{
     background: var(--cor-white);
     border-radius: 10px;
     margin: 2.5rem 0;
-    padding: 2.8rem;
+    padding: 2rem;
     box-shadow: 10px 10px 1px rgba(0,0,0,.2);
 }
 
-.fumulario form .inputBox{
+.container-box form .inputBox{
     margin-bottom: 2rem;
     cursor: pointer;
 }
 
-.fumulario form .inputBox input{
+.container-box form .inputBox input{
     width: 100%;
-    padding: 1.5rem 2.5rem;
+    padding: 1.5rem 2rem;
     border: 1px solid var(--cor-Grayish-Blue);
     border-radius: 5px;
 }
 
-.fumulario form .inputBox input:active{
+.container-box form .inputBox input:active{
     border: 1px solid var(--cor-Dark-Blue);
+    background: #f0efef;
 }
 
-.fumulario form .inputBox input::placeholder{
+.container-box form .inputBox input::placeholder{
     font-weight: 600;
     color: var(--cor-Dark-Blue);
 }
-
 
 .cadastro form .btn{
     width: 100%;
@@ -105,10 +105,6 @@
     padding-top: 2rem;
 }
 
-.cadastro form .flex #marcado{
-    cursor: pointer;
-}
-
 .cadastro form .flex p{
     color: var(--cor-Grayish-Blue);
     font-size: 11px;
@@ -119,7 +115,6 @@
 }
 
 @media (max-width:970px){
-
     .cadastro .sobre{
         text-align: center;
         margin: 3rem 2rem;
@@ -138,10 +133,9 @@
 
 @media (max-width:425px){
 
-    .fumulario form{
+    .cadastro .container-box form{
         background: var(--cor-white);
         border-radius: 10px;
-        margin: 2.5rem;
         padding: 2.8rem;
     }
 
@@ -149,22 +143,18 @@
         font-size: 3rem;
     }
 
-    .cadastro .fumulario .title{
+    .cadastro .container-box .title{
         padding: 1.5rem 3rem;
-        margin: 0 2.5rem;
     }
 }
 
 @media (max-width:320px){
-
     .cadastro{
-        background-image: url(../src/bg-intro-mobile.png), 
-                        linear-gradient(rgba(255, 122, 122,.8), rgba(255, 122, 122,.8));
+        background-image: linear-gradient(rgba(255, 122, 122,.7), rgba(255, 122, 122,.7), url(../src/bg-intro-mobile.png));
     }
 
-    .cadastro .fumulario .title{
+    .cadastro .container-box .title{
         padding: 1.5rem 3rem;
-        margin: 0 2.5rem;
         color: var(--cor-Grayish-Blue);
     }
 }
