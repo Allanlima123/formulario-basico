@@ -1,3 +1,6 @@
+body{
+
+}
 
 .cadastro{
     background-image: linear-gradient(rgba(255, 122, 122,.7), rgba(255, 122, 122,.7)),
@@ -112,6 +115,15 @@
 
 .cadastro form .flex p strong{
     color: var(--cor-red);
+}
+
+footer .attribution{
+    text-align: center;
+    background-image: linear-gradient(rgba(255, 122, 122,.7), rgba(255, 122, 122,.7));
+    padding: 20px 15px;
+    font-size: 15px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 @media (max-width:970px){
