@@ -79,9 +79,8 @@ body{
     border-radius: 5px;
 }
 
-.container-box form .inputBox input:active{
-    border: 1px solid var(--cor-Dark-Blue);
-    background: #f0efef;
+.container-box form .inputBox input:focus{
+    border: 1px solid var(--cor-red);
 }
 
 .container-box form .inputBox input::placeholder{
