@@ -5,4 +5,5 @@
     outline: none;
     font-family: var(--fonte-principal);
     border: none;
+    text-decoration: none;
 }
