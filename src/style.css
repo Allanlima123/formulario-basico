@@ -72,12 +72,12 @@
 .container-box form .inputBox input{
     width: 100%;
     padding: 1.5rem 2rem;
-    border: 1px solid var(--cor-Grayish-Blue);
+    border: 2px solid var(--cor-Grayish-Blue);
     border-radius: 5px;
 }
 
 .container-box form .inputBox input:focus{
-    border: 1px solid var(--cor-red);
+    border: 2px solid var(--cor-red);
 }
 
 .container-box form .inputBox input::placeholder{
@@ -125,6 +125,11 @@ footer .attribution{
     font-size: 15px;
     max-width: 1440px;
     margin: 0 auto;
+}
+
+
+.erroinput{
+    border: 2px solid #c03131 !important;
 }
 
 @media (max-width:970px){
